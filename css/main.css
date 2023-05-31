@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
 }
@@ -18,24 +21,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* Small */
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-/* Medium */
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-/* Large */
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
+
 /* start navbar */
 .navbar {
   overflow: hidden;
@@ -51,6 +37,11 @@ body {
   font-size: 24px;
   font-weight: 800;
   padding: 18px 0;
+}
+.navbar .container .fa-solid{
+  float: right;
+  margin-top: 0.8rem;
+  display: none;
 }
 .menu {
   /* overflow: hidden; */
@@ -79,7 +70,7 @@ body {
 .home {
   height: 100vh;
   background-image: url(../img/slider-02.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
   /* background-color: #ff305b; */
 }
 .layer {
@@ -118,14 +109,14 @@ body {
   padding: 4rem 0;
 }
 .hello-p {
-  width: 50%;
+  width: 35%;
   float: left;
   overflow: hidden;
 }
 .hello-photo {
   /*box-shadow: 0 0 0 8px #555555 inset;
   */
-  width: 50%;
+  width: 100%;
   position: relative;
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -189,8 +180,8 @@ body {
   margin-left: 10px;
 }
 .hello-disc {
-  width: 40%;
-  float: left;
+  width: 50%;
+  float: right;
 }
 .hello .hello-disc .hello-top h2 {
   border-left: 3px solid #ff305b;
@@ -241,10 +232,6 @@ body {
 .navbar {
   background-color: rgb(73, 81, 65);
 }
-.hello-photo {
-}
-.hello {
-}
 .home {
   border-color: black;
 }
@@ -294,10 +281,15 @@ body {
   margin-bottom: 4rem;
 }
 .services .item {
-  width: 20%;
+  width: 100%;
+  /* float: left; */
+  /* margin-left: 25px; */
+  /* padding: 15px; */
+}
+.services .cont .itemx{
+  width: 25%;
   float: left;
-  margin-left: 25px;
-  padding: 15px;
+  padding: 0 2rem;
 }
 .services .item i {
   color: #ff305b;
@@ -330,8 +322,10 @@ body {
 .portfolio .p-content {
   margin-bottom: 3rem;
 }
-.portfolio .p-content .p-img {
-  position: relative;
+.portfolio .p-content .pmar{
+  width: 33.3%;
+  float: left;
+  padding: 1rem 2rem;
 }
 .portfolio .p-content .p-img i {
   position: absolute;
@@ -345,10 +339,10 @@ body {
   width: 100%;
 }
 .portfolio .p-content .p-img {
-  width: 30%;
+  width: 100%;
   position: relative;
   float: left;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 .portfolio .p-content .p-img:hover::after {
   visibility: visible;
@@ -374,10 +368,17 @@ body {
   text-align: center;
   padding: 8rem 0;
 }
+.counter .count-m{
+width: 25%;
+float: left;
+padding: 0 2rem;
+
+}
 .counter .co-item {
-  float: left;
-  width: 20%;
-  margin-left: 2rem;
+  /* float: left; */
+  width: 100%;
+  /* margin-left: 2rem; */
+
 }
 .counter .co-item i {
   color: #ff305b;
@@ -404,9 +405,32 @@ body {
 .feed-counter {
   margin: 3rem auto;
   background-color: #f1f1f1;
+  position: relative;
   width: 70%;
+  overflow: hidden;
+  border-radius:5px ;
+  -webkit-border-radius:5px ;
+  -moz-border-radius:5px ;
+  -ms-border-radius:5px ;
+  -o-border-radius:5px ;
 }
+/* .feed-counter::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #991a1c;
+  top: -60%;
+  left: -70%;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+} */
 .feed-counter .feed-img img {
+  position: relative;
+  z-index: 2;
   width: 100%;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -415,16 +439,17 @@ body {
   -o-border-radius: 50%;
 }
 .feed-counter .feed-img {
-  width: 20%;
+  width: 13%;
   float: left;
-  margin-left: 30px;
-  padding-top: 60px;
+  /* margin-left: 30px; */
+  margin: 60px 1rem;
 }
 .feed-counter .feed-info {
   float: left;
   padding-top: 2rem;
-  width: 50%;
-  margin-left: 2rem;
+
+  width: 80%;
+  /* margin-left: 2rem; */
 }
 .feed-counter .feed-info .loc {
   font-size: 15px;
@@ -449,6 +474,35 @@ body {
   color: #333333;
   font-weight: 600;
 }
+.container .tr{
+  width: 100px;
+  margin: auto;
+}
+.container .tr .current{
+  background-color: rgb(155, 43, 43);
+  width: 1.7rem;
+  height: 1rem;
+  float: left;
+  border-radius: 40%;
+  -webkit-border-radius: 40%;
+  -moz-border-radius: 40%;
+  -ms-border-radius: 40%;
+  -o-border-radius: 40%;
+}
+.container .tr .next{
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  float: left;
+  margin-left: 5px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-top: 0.2rem;
+}
 /* end feedback  */
 /* start blog  */
 .blog {
@@ -458,13 +512,21 @@ body {
 .blog .title {
   text-align: center;
 }
+.blog .blog-counter{
+  margin-top: 3rem;
+}
+.blog .blog-counter .b-mar{
+  float: left;
+  width: 33%;
+  padding: 0 1.2rem;
+}
 .blog .blog-counter .b-item {
-  width: 30%;
+  width: 100%;
   background-color: white;
   padding-bottom: 2rem;
-  float: left;
-  margin-top: 2rem;
-  margin-left: 2rem;
+  /* float: left; */
+  /* margin-top: 2rem; */
+  /* margin-left: 2rem; */
 }
 
 .blog .blog-counter .b-item a h3 {
@@ -501,25 +563,45 @@ body {
   padding: 4rem 0;
 }
 .contact form {
-  width: 50%;
+  width: 65%;
   padding: 2rem 0;
   margin: 2rem auto;
 }
 .contact form .uName {
-  width: 40%;
+  width: 45%;
   height: 120%;
+}
+.contact form .email{
+  width: 50%;
+float: right;
+}
+.contact form .text ,.contact form .txt{
+  width: 100%;
+}
+.contact form  .x{
+  padding: 8px;
+  margin: 0.5rem 0;
+  border: 1px solid #ab8f8f;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 .contact form button {
   background-color: #ff305b;
   color: white;
-  padding: 10px 25px;
+  padding: 10px 25px !important; 
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border: none;
+  display: block;
 }
+
+
 /* end contact  */
 /* start footer  */
 .footer {

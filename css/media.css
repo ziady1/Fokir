@@ -1,0 +1,221 @@
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* 320px—480px: Mobile devices */
+@media screen and (max-width: 480px) {
+    .navbar .container .fa-solid {
+        display: block;
+        margin-top: 1.8rem;
+        font-size: 1.5rem;
+        position: relative;
+      }
+      .navbar .container .fa-solid:hover .links{
+        display: block;
+      }
+      .navbar .container .fa-solid .links{
+        display: none;
+        background-color: aqua;
+        position: fixed;
+        padding: 10px;
+        border-radius: 5px;
+        right: 13px;
+        top: 52px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+      .navbar .container .fa-solid .links ul{
+        list-style: none;
+      }
+      .navbar .container .fa-solid .links ul li{
+        padding: 0;
+        margin: 0;
+      }
+      .navbar .container .fa-solid .links ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+      }
+      .navbar .container .fa-solid .links ul li a:hover{
+        color: black;
+      }
+  .content p {
+    font-size: 20px;
+  }
+  .content h2 {
+    font-size: 50px;
+  }
+  .navbar .menu {
+    display: none;
+  }
+  .navbar .container .fa-solid {
+    display: block;
+    margin-top: 1.8rem;
+    font-size: 1.5rem;
+  }
+  .hello-p,
+  .hello-disc,
+  .services .cont .itemx,
+  .portfolio .p-content .pmar,
+  .counter .count-m,
+  .blog .blog-counter .b-mar {
+    width: 80%;
+    float: none;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .info {
+    float: none;
+    width: 100%;
+    padding: 0.8rem 0;
+  }
+  .contact form .uName,
+  .contact form .email {
+    width: 100%;
+  }
+  .feed-counter {
+    text-align: center;
+  }
+  .feed-counter .feed-info {
+    width: 100%;
+  }
+  .feed-counter .feed-img {
+    width: 60%;
+    margin: 1rem auto;
+    float: none;
+  }
+  .hello .hello-disc .hello-bottom .hire {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+  .hello .hello-disc .hello-bottom .download {
+    float: none;
+    width: 100%;
+  }
+}
+/* 481px—768px: iPads, Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar .menu {
+    display: none;
+  }
+  .navbar .container .fa-solid {
+    display: block;
+    margin-top: 1.8rem;
+    font-size: 1.5rem;
+    position: relative;
+  }
+  .navbar .container .fa-solid:hover .links{
+    display: block;
+  }
+  .navbar .container .fa-solid .links{
+    display: none;
+    background-color: aqua;
+    position: fixed;
+    padding: 10px;
+    border-radius: 5px;
+    right: 13px;
+    top: 52px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  .navbar .container .fa-solid .links ul{
+    list-style: none;
+  }
+  .navbar .container .fa-solid .links ul li{
+    padding: 0;
+    margin: 0;
+  }
+  .navbar .container .fa-solid .links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  .navbar .container .fa-solid .links ul li a:hover{
+    color: black;
+  }
+  .hello-p,
+  .hello-disc,
+  .blog .blog-counter .b-mar {
+    width: 80%;
+    float: none;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .services .cont .itemx,
+  .portfolio .p-content .pmar,
+  .counter .count-m {
+    width: 50%;
+    float: left;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .feed-counter {
+    text-align: center;
+  }
+  .feed-counter .feed-info {
+    width: 100%;
+    padding: 1rem;
+  }
+  .feed-counter .feed-img {
+    width: 60%;
+    margin: 1rem auto;
+    float: none;
+  }
+}
+/* 769px—1024px: Small screens, laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hello-p,
+  .hello-disc,
+  .blog .blog-counter .b-mar {
+    width: 80%;
+    float: none;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .services .cont .itemx,
+  .portfolio .p-content .pmar,
+  .counter .count-m {
+    width: 50%;
+    float: left;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .feed-counter {
+    text-align: center;
+  }
+  .feed-counter .feed-info {
+    width: 100%;
+    padding: 1rem;
+  }
+  .feed-counter .feed-img {
+    width: 60%;
+    margin: 1rem auto;
+    float: none;
+  }
+  .hello .hello-disc .hello-bottom .download {
+    width: 50%;
+  }
+  .hello .hello-disc .hello-bottom .hire {
+    margin-left: 15px;
+    width: 47%;
+  }
+}
